@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+.Home{
+
+margin-left:60px;
+
+}
+.ID{
+
+-webkit-transform:  translateX(50%);
+padding: 0px;
+
+}
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #ef3f98;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f106';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#sbtn2{
+height:40px;
+position:absolute;
+left:-105px;/*アイコン左右の位置調整*/
+top:1px;
+background:#0080ff;
+color:none;
+border:none;
+font-size:20px;/*アイコンサイズ*/
+
+}
+
+
+#sbox4{
+height:30px;
+width: 350px;
+padding:0 0px;
+position:absolute;
+left:-360px;/*アイコン左右の位置調整*/
+top:0px;
+border-radius:2px;
+outline:0;
+background:#eee;
+}
+
+#center{
+    position: absolute;
+    height: 3000px;
+    width:  900px;
+    -webkit-transform:  translateX(5%);
+     margin-top: 30px;
+ }
+.image{
+margin-left:60px;
+margin-top: 47px;
+}
+
+input[type="submit"],
+select,
+textarea,
+button {
+  width: 150px;
+height: 34px;
+background-color: #0080ff;
+color: white;
+position: absolute;
+top: 20px;
+left: 550px;
+font-size:20px;
+}
+
+
+ul.avi {                               /*メインメニューバー*/
+	overflow: hidden;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-size:cover;
+	text-align: center;
+ margin-left:60px;
+}
+
+ul.avi li {                                /*メインメニューバー幅*/
+	float: left;
+	position: relative;
+	display: inline-block;
+    list-style-type: none;
+	width: 120px;
+}
+
+ul.avi a{                                        /*メインメニューバー高*/
+   background-color: #1b2538;
+   color: white;
+   line-height: 20px;
+   text-align: center;
+   text-decoration: none;
+   font-weight: bold;
+   display: block;
+}
+
+ul.avi ul{                                          /*サブメニューバー設置位置*/
+display: none;
+margin: 0px;
+ padding: 0px;
+}
+ul.avi li:hover ul{
+display:block;
+}
+
+ul.avi li a {
+	display: block;
+	padding: 14px 10px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+ul.avi li a:hover:not(.active) {
+	background-color: #a9bce2;
+}
+ul.avi li a.active {
+	background-color: #da3c41;
+
+}
+@media screen and (max-width: 480px) {
+	ul.avi  ul.avi li {
+		float: none;
+	}
+.image img{
+ width:120%;
+ position: relative;/*相対配置*/
+}
+ #tabcontrol a {
+   display: inline-block;            /* インラインブロック化 */
+   border-width: 1px 1px 0px 1px;    /* 下以外の枠線を引く */
+   border-style: solid;              /* 枠線の種類：実線 */
+   border-color: black;              /* 枠線の色：黒色 */
+   border-radius: 0.75em 0.75em 0 0; /* 枠線の左上角と右上角だけを丸く */
+   padding: 0.75em 1em;              /* 内側の余白 */
+   text-decoration: none;            /* リンクの下線を消す */
+   color: black;                     /* 文字色：黒色 */
+   background-color: white;          /* 背景色：白色 */
+   font-weight: bold;                /* 太字 */
+   position: relative;               /* JavaScriptでz-indexを調整するために必要 */
+
+}
+/* ▼タブにマウスポインタが載った際（任意） */
+#tabcontrol a:hover {
+   text-decoration: underline;   /* リンクの下線を引く */
+}
+/* ▼タブの中身 */
+#tabbody div {
+   border: 1px solid black; /* 枠線：黒色の実線を1pxの太さで引く */
+   margin-right:130px;
+   margin-top: -1px;        /* 上側にあるタブと1pxだけ重ねるために「-1px」を指定 */
+   padding: 1em;            /* 内側の余白幅 */
+   background-color: white; /* 背景色：白色 */
+   position: relative;      /* z-indexを調整するために必要 */
+   z-index: 0;              /* 重なり順序を「最も背面」にするため */
+margin-left:60px;
+}
+/* ▼タブの配色 */
+#tabcontrol a:nth-child(1), #tabbody div:nth-child(1) { background-color: #ffffdd; }/* 1つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(2), #tabbody div:nth-child(2) { background-color: #ddffdd; }/* 2つ目のタブとその中身用の配色 */
+#tabcontrol a:nth-child(3), #tabbody div:nth-child(3) { background-color: #ddddff; }/* 3つ目のタブとその中身用の配色 */
+
