@@ -9,6 +9,23 @@
 
 <div class="Home">
 <font color="red"style="font-size:24px">Travel </font>
+<div class="cents">
+<a href="#"style="text-decoration:none;">店舗一覧</a>
+<a href="#" style="text-decoration:none;">よくある質問</a>
+<a class="language" href="#ja" style="text-decoration:none;"><i class="flag-icon flag-icon-jp flag-icon-squared"></i>日本語</a>
+<a class="language" href="#us" style="text-decoration:none;"><i class="flag-icon flag-icon-us flag-icon-squared"></i>英語</a>
+
+</div>
+<div  class="centes">
+<form action="login.jsp" method="post">
+<input  type="search"  id="sbox1"  name="s" />
+<button type="button" id="sbtn2"><i class="fas fa-search"></i></button>
+
+<language initial="en" lang="ja,en,ch"></language>
+
+</form>
+
+</div>
 <br><br><br><br><br>
 <marquee width="2000"  scrollamount="4" height="90"><img src="OIP3YIBB6NG_1.jpg">
 <font color="red"style="font-size:18px">
@@ -96,16 +113,17 @@ body {
  import url(input.css)
 	</style>
 
+
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"
             integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
             crossorigin="anonymous"></script>
 
-<div style="position: absolute; top:200px; right: 500px; max-width: 100%; max-height: 100%; padding: 0px;">
+<div  class="new">
 ${ message }
 <form action="${ pageContext.request.contextPath }/login" method="post">
-<br><font size="4 "><a href="newUser.jsp" >新規登録</a></font>
-<input type="text" name="loginId" id="ID" placeholder="ID">
-<input type="password" name="password"  id="ID" placeholder=パスワード>
+<br><font size="4 "><a href="newUser.jsp" style="text-decoration:none;">新規登録</a></font>
+<input type="text" name="loginId" placeholder="ID">
+<input type="password" name="password"   placeholder="パスワード">
 <input type="submit"  value="ログイン" >
 
 </form>
@@ -117,8 +135,7 @@ ${ message }
 <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css?20201118" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.9.0/css/flag-icon.css?20201118" rel="stylesheet">
 <ul class="avi">
-    <li><a class="active" href="#home">ホーム</a></li>
-    <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i>国内</a>
+    <li><a class="active" href="#home"><i class="fa fa-globe" aria-hidden="true"></i>国内旅行</a>
   <ul>
     <li><a href="#">観光ツアー</a></li>
     <li><a href="#">交通</a></li>
@@ -126,7 +143,7 @@ ${ message }
     <li><a href="#">日帰り</a></li>
    </ul>
   </li>
-<li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i>海外</a>
+<li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i>海外旅行</a>
 <ul>
 <li><a href="#">観光ツアー</a></li>
 <li><a href="#">交通</a></li>
@@ -154,39 +171,16 @@ ${ message }
  import url(input.css)
 	</style>
 
-	 <link rel="stylesheet"  href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css?20201119">
+	 <link rel="stylesheet"  href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css?20201218">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-  <link rel="stylesheet"  href="input.css?20201125">
+  <link rel="stylesheet"  href="input.css?20210104">
 
 
 
 </head>
 <body>
 
-<div class="image">
-<img id="img" src="無題2.png" width="1990" height="800">
-
-<div style="position: absolute; top: 30px; right:10px; max-width: 100%; max-height: 100%; padding: 0px;">
-<a href="#">店舗一覧</a>
-<a href="#">よくある質問</a>
-<a class="language" href="#ja"><i class="flag-icon flag-icon-jp flag-icon-squared"></i>日本語</a>
-<a class="language" href="#us"><i class="flag-icon flag-icon-us flag-icon-squared"></i>英語</a>
-
-</div>
-
-<div style="position: absolute; top: 80px; right:10px; max-width: 100%; max-height: 100%; padding: 0px;">
-<form action="login.jsp" method="post">
-<input  type="search"  id="sbox1"  name="s" />
-<button type="button" id="sbtn2"><i class="fas fa-search"></i></button>
-
-<language initial="en" lang="ja,en,ch"></language>
-
-
-
-</form>
-
-</div>
-</div>
+<img id="img" src="無題2.png" width="1990" height="800"  class="image">
 
 <script> //画面が自動的入れ替える
 var list=new Array("829e058473e899c592d9718111d8526f103caeff.jpg","無題2.png","OIPC73W9MSZ.jpg");
@@ -206,140 +200,6 @@ function slideshow_timer(){
 	}
 
 </script>
-
-<script type="text/javascript">
-
-	//****************
-
-//	    下準備
-
-	//****************
-
-	myDate = new Date();
-	//今日の日付データ取得
-
-	myWeekTbl = new Array("日","月","火","水","木","金","土");
-	//曜日テーブル定義
-	myMonthTbl= new Array(31,28,31,30,31,30,31,31,30,31,30,31);
-	//月テーブル定義
-	myYear = new Date().getFullYear();
-	//年を取得
-
-
-	if (((myYear%4)==0 && (myYear%100)!=0) || (myYear%400)==0){
-	//うるう年だったら...
-	myMonthTbl[1] = 29;
-	//２月を２９日とする
-	}
-
-	myMonth = new Date().getMonth();
-	prevmonth=myMonth-1;
-
-	//月を取得(0月～11月)
-	myToday = myDate.getDate();
-	//今日の'日'を退避
-	myDate.setDate(1);
-	//日付を'１日'に変えて、
-	myWeek = myDate.getDay();
-	//'１日'の曜日を取得
-	myTblLine = Math.ceil((myWeek+myMonthTbl[myMonth])/7);
-	//カレンダーの行数
-	myTable = new Array(7*myTblLine);
-	//表のセル数分定義
-
-
-	for(i=0; i<7*myTblLine; i++) myTable[i]="　";
-	//myTableを掃除する
-	for(i=0; i<myMonthTbl[myMonth]; i++)myTable[i+myWeek]=i+1;
-	//日付を埋め込む
-	//***********************
-
-//	    カレンダーの表示
-
-	//***********************
-	document.write("<table  align='right'>");
-	document.write("<border='3'>");
-
-	//表の作成開始
-	document.write("<tr><td colspan='7' bgcolor='#7fffd4'>");
-	//先月
-	document.write("<a href='#' myYear='"+myYear+"' myMonth='"+myMonth+"' onclick='backmm(this);return false;'></a>");
-	//見出し行セット
-	document.write("<strong>",myYear, "年", (myMonth+1), "月カレンダー</strong>");
-	//次月
-	document.write("<a href='#'myYear='"+myYear+"' myMonth='"+myMonth+"' onclick='nextmm(this);return false;'></a>");
-	document.write("</td></tr></tr>");
-
-
-
-	document.write("<tr>");
-	//曜日見出しセット
-	for(i=0; i<7; i++){
-	//一行(１週間)ループ
-	document.write("<td align='center' ");
-
-	if(i==0)document.write("bgcolor='#fa8072'>");
-	//日曜のセルの色
-	else document.write("bgcolor='#ffebcd'>");
-	//月～土のセルの色
-	document.write("<strong>",myWeekTbl[i],"</strong>");
-	//'日'から'土'の表示
-	document.write("</td>");
-
-	}
-	document.write("</tr>");
-	for(i=0; i<myTblLine; i++){
-	//表の「行」のループ
-	document.write("<tr>");
-	//行の開始
-	for(j=0; j<7; j++){
-	//表の「列」のループ
-	document.write("<td align='center' ");
-	//列(セル)の作成
-	myDat = myTable[j+(i*7)];
-	//書きこむ内容の取得
-	if (myDat==myToday)document.write("bgcolor='#00ffff'>");
-	//今日のセルの色
-	else if(j==6) document.write("bgcolor='#0080c0'>");
-	//土の色
-	else if(j==0) document.write("bgcolor='#ffb6c1'>");
-	//日曜のセルの色
-	else document.write("bgcolor='#ffffe0'>");
-	//平日のセルの色
-	document.write("<strong>",myDat,"</strong>");
-	//日付セット
-	document.write("</td>");
-	//列(セル)の終わり
-	}
-
-	document.write("</tr>");
-	//行の終わり
-
-	}
-
-	document.write("</table>");
-	//表の終わり
-	//-->
-
-	</script>
-
-	<div id="center">
-
-<p id="tabcontrol">
-   <a href="#tabpage1">ニュース</a><font color="red" size="5px">new</font>
-</p>
-<div id="tabbody">
-   <div id="tabpage1">
-        <li><span style="color:rgb(255,255,255);background-color: rgb(71, 196, 12);border-radius: 10px;">　国内　</span>　<a href="https://www.travelvoice.jp/20200923-147124/">緊急事態宣言下の国内旅行消費額83%減、宿泊旅行者は81%減、旅行単価は26%減</a>(2020.09.23)</li><br>
-	    <li><span style="color:rgb(255,255,255);background-color: rgb(233, 76, 85);border-radius: 10px;">　お知らせ　</span>　<a href="https://www.travelvoice.jp/20200923-147024">海外渡航で携帯電話レンタル需要が増加、コロナ隔離期間中の連絡手段として、
-	    電話番号の登録が必須、テレコムスクエアが新プラン</a><span class="audate">(2020.09.23)</span></li><br>
-	    <li><span style="color:rgb(255,255,255);background-color: rgb(233, 76, 85);border-radius: 10px;">　お知らせ　</span>　<a href="https://www.travelvoice.jp/20200923-147111/">ANAセールス、国内旅行に新型コロナ保険を付保、旅行中の医療相談や旅行後14日内の感染２万円補償など</a>（2020.09.23)</li><br>
-	    <li><span style="color:rgb(255,255,255);background-color: rgb(233, 76, 85);border-radius: 10px;">　お知らせ　</span>　<a href="https://www.travelvoice.jp/20200923-147105/">エアカナダ、国際戦往復航空券に無料新型コロナ保険、対象はカナダ公民、治療費としては最大1600万円を補償</a> (2020.09.23)</li><br>
-	     <li><span style="color:rgb(255,255,255);background-color: rgb(233, 76, 85);border-radius: 10px;">　お知らせ　</span>　<a href="https://www.travelvoice.jp/20200924-147147/">ANAとJALが中国線再開、成田/広州線で、ANAは成田/青島線も</a> (2020.09.24)</li><br>
-
-   </div>
-</div>
-</div>
 
 <div id="centers">
 
@@ -731,6 +591,347 @@ function spinnerCal(){
   </div>
 </div>
     </div>
+	<div id="center">
+
+<p id="tabcontrol">
+   <a href="#tabpage1" style="text-decoration:none;">ニュース</a><font color="red" size="5px">new</font>
+</p>
+<div id="tabbody">
+<script type="text/javascript">
+
+	//****************
+
+//	    下準備
+
+	//****************
+
+	myDate = new Date();
+	//今日の日付データ取得
+
+	myWeekTbl = new Array("日","月","火","水","木","金","土");
+	//曜日テーブル定義
+	myMonthTbl= new Array(31,28,31,30,31,30,31,31,30,31,30,31);
+	//月テーブル定義
+	myYear = new Date().getFullYear();
+	//年を取得
+
+
+	if (((myYear%4)==0 && (myYear%100)!=0) || (myYear%400)==0){
+	//うるう年だったら...
+	myMonthTbl[1] = 29;
+	//２月を２９日とする
+	}
+
+	myMonth = new Date().getMonth();
+	prevmonth=myMonth-1;
+
+	//月を取得(0月～11月)
+	myToday = myDate.getDate();
+	//今日の'日'を退避
+	myDate.setDate(1);
+	//日付を'１日'に変えて、
+	myWeek = myDate.getDay();
+	//'１日'の曜日を取得
+	myTblLine = Math.ceil((myWeek+myMonthTbl[myMonth])/7);
+	//カレンダーの行数
+	myTable = new Array(7*myTblLine);
+	//表のセル数分定義
+
+
+	for(i=0; i<7*myTblLine; i++) myTable[i]="　";
+	//myTableを掃除する
+	for(i=0; i<myMonthTbl[myMonth]; i++)myTable[i+myWeek]=i+1;
+	//日付を埋め込む
+	//***********************
+
+//	    カレンダーの表示
+
+	//***********************
+	document.write("<table  align='right'>");
+	document.write("<border='3'>");
+
+	//表の作成開始
+	document.write("<tr><td colspan='7' bgcolor='#7fffd4'>");
+	//先月
+	document.write("<a href='#' myYear='"+myYear+"' myMonth='"+myMonth+"' onclick='backmm(this);return false;'></a>");
+	//見出し行セット
+	document.write("<strong>",myYear, "年", (myMonth+1), "月カレンダー</strong>");
+	//次月
+	document.write("<a href='#'myYear='"+myYear+"' myMonth='"+myMonth+"' onclick='nextmm(this);return false;'></a>");
+	document.write("</td></tr></tr>");
+
+
+	document.write("<tr>");
+	//曜日見出しセット
+	for(i=0; i<7; i++){
+	//一行(１週間)ループ
+	document.write("<td align='center' ");
+
+	if(i==0)document.write("bgcolor='#fa8072'>");
+	//日曜のセルの色
+	else document.write("bgcolor='#ffebcd'>");
+	//月～土のセルの色
+	document.write("<strong>",myWeekTbl[i],"</strong>");
+	//'日'から'土'の表示
+	document.write("</td>");
+
+	}
+	document.write("</tr>");
+	for(i=0; i<myTblLine; i++){
+	//表の「行」のループ
+	document.write("<tr>");
+	//行の開始
+	for(j=0; j<7; j++){
+	//表の「列」のループ
+	document.write("<td align='center' ");
+	//列(セル)の作成
+	myDat = myTable[j+(i*7)];
+	//書きこむ内容の取得
+	if (myDat==myToday)document.write("bgcolor='#00ffff'>");
+	//今日のセルの色
+	else if(j==6) document.write("bgcolor='#0080c0'>");
+	//土の色
+	else if(j==0) document.write("bgcolor='#ffb6c1'>");
+	//日曜のセルの色
+	else document.write("bgcolor='#ffffe0'>");
+	//平日のセルの色
+	document.write("<strong>",myDat,"</strong>");
+	//日付セット
+	document.write("</td>");
+	//列(セル)の終わり
+	}
+
+	document.write("</tr>");
+	//行の終わり
+
+	}
+
+	document.write("</table>");
+	//表の終わり
+	//-->
+
+	</script>
+
+   <div id="tabpage1">
+        <li><span style="color:rgb(255,255,255);background-color: rgb(71, 196, 12);border-radius: 10px;">　国内　</span>　<a href="https://www.travelvoice.jp/20200923-147124/" style="text-decoration:none;">緊急事態宣言下の国内旅行消費額83%減、宿泊旅行者は81%減、旅行単価は26%減</a>(2020.09.23)</li><br>
+	    <li><span style="color:rgb(255,255,255);background-color: rgb(233, 76, 85);border-radius: 10px;">　お知らせ　</span>　<a href="https://www.travelvoice.jp/20200923-147024" style="text-decoration:none;">海外渡航で携帯電話レンタル需要が増加、コロナ隔離期間中の連絡手段として、
+	    電話番号の登録が必須、テレコムスクエアが新プラン</a><span class="audate">(2020.09.23)</span></li><br>
+	    <li><span style="color:rgb(255,255,255);background-color: rgb(233, 76, 85);border-radius: 10px;">　お知らせ　</span>　<a href="https://www.travelvoice.jp/20200923-147111/" style="text-decoration:none;">ANAセールス、国内旅行に新型コロナ保険を付保、旅行中の医療相談や旅行後14日内の感染２万円補償など</a>（2020.09.23)</li><br>
+	    <li><span style="color:rgb(255,255,255);background-color: rgb(233, 76, 85);border-radius: 10px;">　お知らせ　</span>　<a href="https://www.travelvoice.jp/20200923-147105/" style="text-decoration:none;">エアカナダ、国際戦往復航空券に無料新型コロナ保険、対象はカナダ公民、治療費としては最大1600万円を補償</a> (2020.09.23)</li><br>
+	     <li><span style="color:rgb(255,255,255);background-color: rgb(233, 76, 85);border-radius: 10px;">　お知らせ　</span>　<a href="https://www.travelvoice.jp/20200924-147147/" style="text-decoration:none;">ANAとJALが中国線再開、成田/広州線で、ANAは成田/青島線も</a> (2020.09.24)</li><br>
+
+   </div>
+</div>
+
+<div class="TabBlocks" style="display:block"  role="search">
+<p id="tabcontrols">
+<br>国内線 購入・予約確認・変更
+
+</p>
+   <ul class="cp_list">
+    <li><a href="#" style="text-decoration:none;">予約確認・購入・座席指定</a></li><br>
+    <li><a href="#" style="text-decoration:none;">搭乗手続き</a></li><br>
+    <li><a href="#" style="text-decoration:none;">その他のご予約をお持ちのお客様</a></li>
+   </ul>
+
+</div>
+
+
+   <div class="cp_tab">
+  <br> <p id="tabcontroles">運用状況の確認・検索</p>
+	 <input type="radio" name="cp_tab" id="tab4_1" checked>
+	 <label for="tab4_1">路線で検索</label>
+	 <input type="radio" name="cp_tab" id="tab4_2">
+	 <label for="tab4_2">便名で検索</label>
+
+	<div class="cp_tabpanels">
+		<div class="cp_tabpanel">
+		 <ul class="cp_list">
+          <li> 出発地:
+      <select class="Area">
+      <option value="HND">羽田空港</option>
+      <option value="ITM">伊丹空港</option>
+      <option value="KIX">関西空港</option>
+      <option value="CTS">新千歳空港</option>
+      <option value="NRT">成田空港</option>
+      <option value="NGO">中部国際空港</option>
+      <option value="FUK">福岡空港</option>
+      <option value="OKA">那覇空港</option>
+
+      </select>
+       </li>
+          <li> 到着地:
+    <select class="Area">
+      <option value="HND">羽田空港</option>
+      <option value="ITM">伊丹空港</option>
+      <option value="KIX">関西空港</option>
+      <option value="CTS">新千歳空港</option>
+      <option value="NRT">成田空港</option>
+      <option value="NGO">中部国際空港</option>
+      <option value="FUK">福岡空港</option>
+      <option value="OKA">那覇空港</option>
+
+      </select>
+       </li>
+        <br> <input type="date">
+        <input type="button" id="sbtn4" value="検索">
+         </ul>
+		</div>
+		<div class="cp_tabpanel">
+			<ul class="cp_list">
+    <li>便名：<input type="text" id="sbox5"></li>
+     <div class="Selectset">
+    <li> 出発地:
+      <select class="Area">
+      <option value="HND">羽田空港</option>
+      <option value="ITM">伊丹空港</option>
+      <option value="KIX">関西空港</option>
+      <option value="CTS">新千歳空港</option>
+      <option value="NRT">成田空港</option>
+      <option value="NGO">中部国際空港</option>
+      <option value="FUK">福岡空港</option>
+      <option value="OKA">那覇空港</option>
+
+      </select>
+       </li>
+    <li> 到着地:
+    <select class="Area">
+      <option value="HND">羽田空港</option>
+      <option value="ITM">伊丹空港</option>
+      <option value="KIX">関西空港</option>
+      <option value="CTS">新千歳空港</option>
+      <option value="NRT">成田空港</option>
+      <option value="NGO">中部国際空港</option>
+      <option value="FUK">福岡空港</option>
+      <option value="OKA">那覇空港</option>
+
+      </select>
+       </li>
+    <br> <input type="date">
+    <input type="button" id="sbtn4" value="検索">
+   </ul>
+		</div>
+	</div>
+ </div>
+
+  <div class="TabBlockss" style="display:block"  role="search">
+  <p id="tabcontrolss">
+  <br>ご搭乗に関する注意事項
+ </p>
+    <ul class="cp_list">
+    <li><a href="#" style="text-decoration:none;">搭乗手続きの流れ</a></li><br>
+    <li><a href="#" style="text-decoration:none;">スキップサービスについて</a></li><br>
+    <li><a href="#" style="text-decoration:none;">荷物について</a></li><br>
+    <li><a href="#" style="text-decoration:none;">乗り継ぎ便の手続きについて</a></li><br>
+    <li><a href="#" style="text-decoration:none;">各空港からのお知らせ</a></li>
+   </ul>
+
+</div>
+
+<div class="plan">
+ <span style="color:rgb(255,255,255);background-color: rgb(233, 76, 85);border-radius: 40px;">　　お勧めプラン　</span><br><br>
+</div>
+<div class="TabBlockb">
+ <br><br><p align="center"><font color="red" size="6px">北海道</font></p>
+
+  <div class="plans">
+<img src="42819147_2.jpg" align="button" vspace="15" hspace="30" height="300">
+<p align="left"><font color="red"><a href="#" style="text-decoration:none;">札幌周遊 二泊三日 83,000円～120,000円</a></font></p>
+</div>
+
+</div>
+<div class="TabBlockbs">
+ <br><br><p align="center"><font color="red" size="6px">関東</font></p>
+  <div class="planss">
+<img src="8344948429_1da5a6f0e7_b.jpg" align="button" vspace="15" hspace="30" height="300">
+<p align="left"><font color="red"><a href="#" style="text-decoration:none;">東京周遊 三泊四日 17,8000円～48,000円</a></font></p>
+</div>
+
+</div>
+<div class="TabBlockbes">
+ <br><br><p align="center"><font color="red" size="6px">関西</font></p>
+  <div class="planes">
+<img src="osa_dotonbori_night.jpg" align="button" vspace="15" hspace="30" height="300">
+<p align="left"><font color="red"><a href="#" style="text-decoration:none;">大阪周遊 一泊二日 20,000円～43,000円</a></font></p>
+</div>
+</div>
+<div class="TabBlockbe">
+ <br><br><p align="center"><font color="red" size="6px">関西</font></p>
+  <div class="plane">
+  <img src="KTA_TOP_01.jpg" align="button" vspace="15" hspace="30" height="300">
+<p align="left"><font color="red" ><a href="#" style="text-decoration:none;">京都周遊 二泊三日25,000円～84,100円</a></font></p>
+</div>
+</div>
+<div class="TabBlockbea">
+ <br><br><p align="center"><font color="red" size="6px">九州</font></p>
+ <div class="planea">
+<img src="DSC_7140.jpg" align="button" vspace="15" hspace="30" height="300">
+<p align="left"><font color="red"><a href="#" style="text-decoration:none;">長崎県周遊  二泊三日 36,000円～96,000円</a></font></p>
+</div>
+</div>
+<div class="TabBlockbed">
+ <br><br><p align="center"><font color="red" size="6px">伊豆大島</font></p>
+  <div class="planed">
+<img src="maxresdefault.jpg" align="button" vspace="15" hspace="30" height="300">
+<p align="left"><font color="red" ><a href="#" style="text-decoration:none;">伊豆諸島周遊 一泊二日 19,800円～30,000円</a></font></p>
+</div>
+</div>
+<div class="Tabse">
+<div class="Tabses">
+<p align="left"><font color="red" size="15px"><a href="#" style="text-decoration:none;">国内旅行</a></font></p>
+<font  size="6px"><a href="#" style="text-decoration:none;">　国内旅行トップ 　</a></font>
+<font  size="6px"><a href="#" style="text-decoration:none;">　バスツアー　</a></font>
+<font  size="6px"><a href="#" style="text-decoration:none;">　鉄道ツアー　</a></font>
+<font  size="6px"><a href="#" style="text-decoration:none;">　鉄道+ホテル　</a></font>
+<font  size="6px"><a href="#" style="text-decoration:none;">　レンタカー　</a></font>
+<font  size="6px"><a href="#" style="text-decoration:none;">　旅プロ（比較サイト）　</a></font>
+<br><br><font  size="6px"><a href="#" style="text-decoration:none;">　国内ツアー　</a></font>
+<br><br><font  size="3px"><a href="#" style="text-decoration:none;">　　　沖縄旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　沖縄離島　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　北海道旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　ハウステンボス旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　九州旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　東北旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　関東・甲信越旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　東海・北陵旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　近畿・関西旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　山陰・山陽旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　四国旅行　</a></font>
+<br><br><font  size="6px"><a href="#" style="text-decoration:none;">　旅館/ホテル　</a></font>
+<p align="left"><font  color="darkgray" size="15px">_______________________________________________________________</font></p>
+<p align="left"><font color="red" size="15px"><a href="#" style="text-decoration:none;">法人・団体・組織向けサービス</a></font></p>
+
+<br><font  size="3px"><a href="#" style="text-decoration:none;">　　　法人・団体・組織向けサービス　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　海外出張・業務渡航　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　会議　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　社員旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　海外視察・学会・見本市　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　福利厚生　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　公務出張　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　スポーツイベント・スポーツ大会　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　修学旅行・教育旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　エンターテインメント事業　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　グループ旅行　</a></font>
+<font  color="darkgray" size="15px">_______________________________________________________________</font>
+<p align="left"><font color="red" size="15px"><a href="#" style="text-decoration:none;">テーマ別旅行</a></font></p>
+
+<br><font  size="3px"><a href="#" style="text-decoration:none;">　　　航空会社丸分かり　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　世界遺産50選　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　クルーズ旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　ビジネス・ファーストクラス　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　海外券航空券　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　世界一周　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　海外・沖縄ウェディング　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　スポーツ観戦・体験　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　世界遺産・秘境ツアー　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　トレッキング・自然体験ツアー　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　ポランティア　</a></font>
+<br><br><font  size="3px"><a href="#" style="text-decoration:none;">　　　バリアフリー旅行　</a></font>
+<font  size="3px"><a href="#" style="text-decoration:none;">　留学・ホームスティ　</a></font>
+<font  color="darkgray" size="15px">_______________________________________________________________</font>
+</div>
+</div>
+</div>
 
 
 </body>
