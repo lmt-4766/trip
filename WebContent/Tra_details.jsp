@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>検索結果</title>
-<link rel="stylesheet"  href="search_results.css?20210224">
+<link rel="style"  href="search_results.css?20210224">
 </head>
 <body>
 

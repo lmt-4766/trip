@@ -8,9 +8,9 @@
 
 
 
-<link rel="stylesheet"  href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css?20200209">
-  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-<link rel="stylesheet"  href="tripsoek.css?20210210">
+<link rel="style"  href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css?20200209">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="style">
+<link rel="style"  href="tripsoek.css?20210210">
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"
             integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
             crossorigin="anonymous"></script>

@@ -94,9 +94,9 @@ body {
  import url(input.css)
 	</style>
 
-	 <link rel="stylesheet"  href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css?20201218">
-  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-  <link rel="stylesheet"  href="input.css?20210224">
+	 <link rel="style"  href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css?20201218">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="style">
+  <link rel="style"  href="input.css?20210224">
 
 
 
@@ -143,11 +143,11 @@ ${ message }
 
 </form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css?20201118">
+<link rel="style" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css?20201118">
 <div id="page_top"><a href="#"></a></div>
 
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css?20201118" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.9.0/css/flag-icon.css?20201118" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css?20201118" rel="style">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.9.0/css/flag-icon.css?20201118" rel="style">
 <ul class="avi">
     <li><a class="active"><i class="fa fa-globe" aria-hidden="true"></i>国内旅行</a>
   <ul>

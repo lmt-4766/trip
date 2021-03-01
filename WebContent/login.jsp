@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 
 <title>マイページ</title>
- <link rel="stylesheet"  href="test.css?20201125">
+ <link rel="style"  href="test.css?20201125">
 
 <div class="Home">
 <font color="red"style="font-size:24px">Travel </font>

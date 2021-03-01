@@ -22,7 +22,7 @@
 </font>
 </marquee>
 </div>
- <link rel="stylesheet"  href="test1.css?20201214">
+ <link rel="style"  href="test1.css?20201214">
 
 </head>
 <body>

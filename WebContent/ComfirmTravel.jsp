@@ -4,14 +4,14 @@
 <html>
 <head>
 <title>国内ツアー　検索</title>
- <link rel="stylesheet"  href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css?20201218">
-  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+ <link rel="style"  href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css?20201218">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="style">
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"
             integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
             crossorigin="anonymous"></script>
 
-            <link rel="stylesheet"  href="tripDB.css?20210222">
+            <link rel="style"  href="tripDB.css?20210222">
 
 </head>
 <body>

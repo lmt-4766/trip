@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="table">
-<link rel="stylesheet"  href="tripsoek.css?20210222">
+<link rel="style"  href="tripsoek.css?20210222">
 <font size="5 "><a href="ComfirmTravel.jsp" >新規登録＞</a></font>
 <font size="6 "color="red"><a href="TripComfirm.jsp">確認</a></font>
 <br>

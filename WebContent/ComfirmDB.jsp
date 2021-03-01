@@ -6,7 +6,7 @@
 <title>一覧</title>
 </head>
 <body>
-<link rel="stylesheet"  href="new.css?20210120">
+<link rel="style"  href="new.css?20210120">
 <font size="5 "><a href="newUser.jsp" >新規登録＞</a></font>
 <font size="6 "color="red"><a href="jsp/Comfirm.jsp">確認</a></font>
 <br>
