@@ -1,23 +1,18 @@
 package bean;
 
+import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
-
-import javax.sql.DataSource;
 
 @SuppressWarnings("serial")
-public class DataAccount implements java.io.Serializable{
+public class DataAccount implements Serializable{
 	 Connection conn=null;
      PreparedStatement ps=null;
      ResultSet rs=null;
      String sql="SELECT loginId, password FROM Account WHERE loginId=?";
-     private static DataSource ds = null;
-     private static final String JNDI_NAME = "java:comp/env/jdbc/ssjdb";
 
 
   public boolean authebtication(String loginId,String password) throws SQLException{
@@ -27,8 +22,7 @@ public class DataAccount implements java.io.Serializable{
     	  //JDBCドライバーのロード
     	  Class.forName("oracle.jdbc.driver.OracleDriver");
 
-    	  // 戻り値用のCollectionオブジェクト
-    	  Collection<AccountBeans> list=new ArrayList<AccountBeans>();
+
     	  //Connectionオブジェクトの取得
     	  conn=DriverManager.getConnection(
     			  "jdbc:oracle:thin:@localhost:1522:userdb","sys as sysdba","password");

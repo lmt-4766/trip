@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.table{
+	padding: 179px 318px;
+    height: 793px;
+    zoom: 152%;
+
+}
+p{
+	top:100px;
+	zoom:174%;
+}
+
+.form-tables td {
+padding: 31px 247px 32px 7px;
+ width:100px;
+}
+.form-tables{
+	windth:100px;
+}
+input[type="submit"]{
+    width: 150px;
+    height: 47px;
+    background: #33d847;
+    color: #1f0000;
+    position: absolute;
+    top: 205px;
+    left: 1123px;
+    font-size: 20px;
+}

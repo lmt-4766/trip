@@ -4,11 +4,11 @@ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/
 
 <servlet>
     <servlet-name>home.jsp</servlet-name>
-    <servlet-class>/WebContent/home.jsp</servlet-class>
+    <servlet-class>/WebContent/Home.jsp</servlet-class>
 </servlet>
 <servlet>
     <servlet-name>login.jsp</servlet-name>
-    <servlet-class>/WebContent/login.jsp</servlet-class>
+    <servlet-class>/WebContent/Login.jsp</servlet-class>
 </servlet>
 <servlet>
     <servlet-name>accountSearch</servlet-name>

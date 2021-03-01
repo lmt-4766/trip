@@ -7,7 +7,7 @@
 </head>
 <body>
 <font size="5 "><a href="newUser.jsp" >新規登録＞</a></font>
-<font size="6 "color="red"><a href="Comfirm.jsp">確認</a></font>
+<font size="6 "color="red"><a href="jsp/Comfirm.jsp">確認</a></font>
 <br>
 ${message }
  <form  action="${ pageContext.request.contextPath }/accountSearch" method="post" />
@@ -44,6 +44,7 @@ ${message }
             </tr>
 
 	</table>
+
 	<a href="${ pageContext.request.contextPath }/newUser.jsp">新規登録ページへ</a>
 	<a href="${ pageContext.request.contextPath }/home.jsp">Topページへ</a>
 	<style>

@@ -13,29 +13,7 @@ p {
   margin: 60px auto 40px;
 }
 
-input[type="reset"],
-select,
-textarea,
-button {
-  width: 200px;
-height: 50px;
-background-color: #c0c0c0;
-top: 750px;
-left: 50px;
-font-size:25px;
-}
 
-input[type="submit"],
-select,
-textarea,
-button {
-  width: 200px;
-height: 50px;
-background-color: #c0c0c0;
-
-top: 650px;
-font-size:25px;
-}
 
 input[type="button"],
 select,
@@ -107,12 +85,13 @@ textarea {
 input[type="number"],
 textarea {
   background: #f8f8f8;
-  display: block;
-  font-size: 16px;
-  padding: 12px 15px;
-  width: 180px;
-  transition: 0.8s;
-  border-radius: 0;
+    display: block;
+    font-size: 16px;
+    padding: 12px 15px;
+    width: 261px;
+    height: 5px;
+    transition: 0.8s;
+    border-radius: 0;
 }
 
 input[type="text"]:focus,
@@ -157,12 +136,50 @@ textarea::placeholder {
   border-bottom: 1px solid #d7d7d7;
   padding: 10px;
 }
+input[type="radio"], textarea {
+    width: 40px;
+    height: 34px;
+    vertical-align: middle;
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%;
+}
+input[type="submit"],  button {
+   width: 150px;
+    height: 47px;
+    background-color:#c0c0c0;
+    color:#f8f8f8;
+    position: absolute;
+    top: 1251px;
+    left: 538px;
+    font-size: 20px;
+}
 
+input[type="reset"],  button {
+   width: 150px;
+    height: 47px;
+    background-color: #c0c0c0;
+    color: #f8f8f8;
+    position: absolute;
+    top: 1251px;
+    left: 290px;
+    font-size: 20px;
+}
 .form-table th {
-  background: #ffecea;
-  padding-left: 20px;
-  position: relative;
-  text-align: none;
-  width: 100%;
+    background: #ffecea;
+    padding: 29px 64px 29px 17px;
+    position: inherit;
+    text-align: center;
+    width: 100%;
+
+}
+
+.fonts{
+	-webkit-transform:  translateX(18%);
+	padding: 7px 273.5px 13px;
+	zoom: 114%;
 }
 

@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+.Home{
+
+-webkit-transform: translateX(39%);
+    margin-top: 54px;
+
+}
+.table{
+	padding: 95px;
+    zoom: 116%;
+    margin-left: 238pX;
+}
+input[type="text"] {
+    background-color: #f8f8f8;
+    font-size: 16px;
+    padding: -2px 15px;
+    width: 209px;
+    height: 45px;
+    transition: 0.8s;
+    border-radius: 0;
+
+}
+input[type="submit"]{
+   width: 150px;
+    height: 47px;
+    background: #e9f5fb;
+    color: #1f0000;
+    position: absolute;
+    top: 210px;
+    left: 821px;
+    font-size: 20px;
+}
+ul.cp_list {
+	padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+}
+ul.cp_list li {
+	line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none!important;/*ポチ消す*/
+}
+
+
+ul.cp_list li a:hover:not(.active) {
+	background-color: #0080ff;
+}
+ul.cp_list li a.active {
+	background-color: #da3c41;
+}
+.srarch ::selection {
+	background-color: #4EC6DE;
+}
+.srarch{
+ -webkit-transform: translateX(102%);
+    padding: 32px;
+    background-color: palegoldenrod;
+    width: 548px;
+    height: 344px;
+    margin-top: 134px;
+    zoom: 78%;
+}
+.srarch input[type='radio'] {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	background: none;
+	-webkit-appearance: none;
+	        appearance: none;
+	display: none;
+}
+.srarch > label {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	padding: 12px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-size: 126%;
+	font-weight: bold;
+}
+.srarch > label:hover,
+.srarch > input:checked + label {
+	border-radius: 6px 6px 0 0;
+    background: #bf20b3;
+}
+.srarch .cp_tabpanels {
+	clear: both;
+	perspective: 600px;
+	min-height: 150px;/* エリアの高さ */
+}
+.srarch .cp_tabpanels .cp_tabpanel {
+	line-height: 1.4em;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 192%;
+    padding: 10px 0px 40px;
+    transition: opacity 0.3s, transform 1s;
+    transform: rotateX(-20deg);
+    transform-origin: top center;
+    opacity: 0;
+
+}
+.srarch #tab4_1:checked ~ .cp_tabpanels .cp_tabpanel:nth-of-type(1),
+.srarch #tab4_2:checked ~ .cp_tabpanels .cp_tabpanel:nth-of-type(2) {
+	z-index: 1;
+	transform: rotateX(0);
+	opacity: 1;
+}
+
+
+#sbtn4{    /*プラン 検索ボタン*/
+
+   width: 139px;
+    height: 36px;
+    position: absolute;
+    left: 1872px;
+    top: 87px;
+    background: #e9f5fb;
+    color: none;
+    border: none;
+    font-size: 20px;
+}
+#sbtn5{    /*戻る  検索ボタン*/
+
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    left: 54px;
+    top: 317px;
+    background: #e9f5fb;
+    color: none;
+    border: none;
+    font-size: 20px;
+}
+.tablee{
+	padding:79px;
+	zoom:161%;
+	border:1;
+}
+.tables{
+	padding:79px;
+	zoom:161%;
+}
+.form-tables td {
+background: #ffecea;
+padding: 31px -2px 7px;
+zoom:142%
+}
+.form-tables{
+	windth:100px;
+}
